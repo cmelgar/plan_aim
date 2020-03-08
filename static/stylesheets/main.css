@@ -1,0 +1,49 @@
+html {
+    height: 100%;
+    border: 2px solid blue;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    border: 1px solid red;
+    display: flex;
+}
+
+#menu {
+    width: 25%;
+    height: 100%;
+    border: 1px solid blue;
+    background: lightskyblue;
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+    line-height: 70px;
+    margin: 0;
+}
+
+#menu ul li {
+    border: 1px solid orange;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+
+#menu ul li:hover {
+    background: cadetblue;
+}
+
+#dashboard {
+    width: 75%;
+    min-height: 600px;
+    border: 1px solid green;
+}
