@@ -5,18 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheets/main.css')}}">
     <title>Plan Project</title>
+    {% block head %} {% endblock %}
 </head>
 <body>
     <div class="container">
         <div id="menu">
             <ul>
                 {% for item in data %}
-                <li>{{item[1]}}</li>
-                <li><a href="#">+ Add aim</a></li>
+                <li><a href="/get/{{item[0]}}">{{item[1]}}</a></li>
+                <li><a href="/add">+ Add aim</a></li>
                 {% endfor %}
             </ul>
         </div>
-        <div id="dashboard"></div>
+        <div id="dashboard">
+            {% block body %}
+            <h1>Details of {{ aim }}</h1>
+            {% endblock %}
+        </div>
     </div>
 </body>
 </html>

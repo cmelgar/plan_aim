@@ -1,6 +1,5 @@
 html {
     height: 100%;
-    border: 2px solid blue;
 }
 
 body {
@@ -13,14 +12,12 @@ body {
 .container {
     height: 100%;
     width: 100%;
-    border: 1px solid red;
     display: flex;
 }
 
 #menu {
     width: 25%;
     height: 100%;
-    border: 1px solid blue;
     background: lightskyblue;
 }
 
@@ -42,8 +39,17 @@ body {
     background: cadetblue;
 }
 
+#menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+
 #dashboard {
     width: 75%;
     min-height: 600px;
-    border: 1px solid green;
+    padding: 40px;
+}
+
+label {
+    font-size: 14px;
 }
